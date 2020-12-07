@@ -11,7 +11,6 @@ const unformattedData: string[] = fs
   .split('\n')
 
 let entryList: string[] = []
-
 const data: string[] = unformattedData.reduce((acc, curr) => {
   if (curr !== '') {
     entryList.push(curr)
