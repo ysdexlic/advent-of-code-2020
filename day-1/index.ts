@@ -1,5 +1,7 @@
 import { data } from './data'
 
+console.log('=-=-=-=-=-=-=-=-=-=-= DAY 1 =-=-=-=-=-=-=-=-=-=-=')
+
 const part1 = (): number | void => {
   for (let i = 0; i < data.length - 1; i++) {
     const num = data[i]

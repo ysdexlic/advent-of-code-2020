@@ -1,4 +1,4 @@
-export const data = `3-7 r: mxvlzcjrsqst
+3-7 r: mxvlzcjrsqst
 1-3 c: ccpc
 6-12 f: mqcccdhxfbrhfpf
 14-15 l: llllllllllllldgll
@@ -997,4 +997,4 @@ export const data = `3-7 r: mxvlzcjrsqst
 3-6 h: hhhhmhhhhhw
 6-7 q: vgldrqp
 4-7 p: npzgpppdpjj
-6-7 w: wwwwwwqww`
+6-7 w: wwwwwwqww

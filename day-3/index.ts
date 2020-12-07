@@ -1,4 +1,11 @@
-import { data as unformattedData } from './data'
+import * as fs from 'fs'
+import * as path from 'path'
+
+console.log('=-=-=-=-=-=-=-=-=-=-= DAY 3 =-=-=-=-=-=-=-=-=-=-=')
+
+const unformattedData = fs
+  .readFileSync(path.join(__dirname, './input.txt'))
+  .toString()
 
 const data: string[] = unformattedData.split('\n')
 
@@ -41,7 +48,6 @@ const part2 = (): number => {
 
   let total = 1
   for (const direction of possibleDirections) {
-    console.log(part1(direction))
     total *= part1(direction)
   }
 

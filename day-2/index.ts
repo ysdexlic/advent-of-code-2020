@@ -1,4 +1,11 @@
-import { data as unformattedData } from './data'
+import * as fs from 'fs'
+import * as path from 'path'
+
+console.log('=-=-=-=-=-=-=-=-=-=-= DAY 2 =-=-=-=-=-=-=-=-=-=-=')
+
+const unformattedData = fs
+  .readFileSync(path.join(__dirname, './input.txt'))
+  .toString()
 
 const data = unformattedData.split('\n')
 
@@ -13,6 +20,9 @@ const part1 = (): number => {
 }
 
 const passwordValidPart1 = (entry: string): boolean => {
+  if (entry === '') {
+    return false
+  }
   const [policy, password] = entry.split(':')
   const [range, letter] = policy.split(' ')
   const [minRangeStr, maxRangeStr] = range.split('-')
@@ -43,6 +53,9 @@ const part2 = (): number => {
 }
 
 const passwordValidPart2 = (entry: string): boolean => {
+  if (entry === '') {
+    return false
+  }
   const [policy, password] = entry.split(':')
   const [range, letter] = policy.split(' ')
   const [position1Str, position2Str] = range.split('-')

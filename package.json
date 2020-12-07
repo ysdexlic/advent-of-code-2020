@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn day-$DAY/index.ts",
     "compile": "tsc ./**/index.ts",
-    "start": "ts-node ./**/index.ts"
+    "start": "ts-node ./index.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
